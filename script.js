@@ -106,25 +106,3 @@ const contactObserver = new IntersectionObserver(entries => {
   });
 }, { threshold: 0.3 });
 contactObserver.observe(contactSection);
-
-const cursor = document.querySelector(".custom-cursor");
-
-let targetX = 0, targetY = 0;
-let currentX = 0, currentY = 0;
-
-document.addEventListener("mousemove", e => {
-  targetX = e.clientX;
-  targetY = e.clientY;
-});
-
-function animateCursor() {
-  currentX += (targetX - currentX) * 0.1;
-  currentY += (targetY - currentY) * 0.1;
-
-  cursor.style.left = currentX + "px";
-  cursor.style.top = currentY + "px";
-
-  requestAnimationFrame(animateCursor);
-}
-
-animateCursor();
