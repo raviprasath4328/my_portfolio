@@ -7,6 +7,8 @@
 
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
 </head>
 <body>
 
@@ -18,6 +20,7 @@
       <a href="#skills">Skills</a>
       <a href="#projects">Projects</a>
       <a href="#certifications">Certifications</a>
+       <a href="#education">Education</a> <!-- ADD THIS -->
       <a href="#contact">Contact</a>
     </nav>
   </header>
@@ -118,10 +121,18 @@
 <h2 class="section-title">Certifications</h2>
 <div class="cert-card">
 <h3>HTML & CSS Web Development</h3>
+<a href="certificate.pdf" class="cert-btn" target="_blank">
+  View Certificate
+</a>
+
 <p>Completed a certification in HTML and CSS for building responsive web applications.</p>
 </div>
 <div class="cert-card">
 <h3>Python for Data Science</h3>
+<a href="certificate.pdf" class="cert-btn" target="_blank">
+  View Certificate
+</a>
+
 <p>Completed a certification in Python with a focus on Data Science and AI applications.</p>
 </div>
 </div>
@@ -136,36 +147,87 @@
       <div class="timeline-item">
         <div class="timeline-dot"></div>
         <div class="timeline-content">
-          <h3>Higher Secondary (HSLC)</h3>
-          <p>Government Boys Higher Secondary School, Udumalpet</p>
+         <div class="education-item">
+           <h3>Higher Secondary (HSLC)</h3>
+           <p>Government Boys Higher Secondary School, Udumalpet</p>
+           <p>Year of Passing: <strong>2023</strong></p>
+           <p>Percentage: <strong>84%</strong></p>
+              <a href="hslc-certificate.pdf" target="_blank" class="cert-btn">
+                 View HSLC Certificate
+              </a>
+          </div>
         </div>
       </div>
 
       <div class="timeline-item">
         <div class="timeline-dot"></div>
         <div class="timeline-content">
-          <h3>Secondary School (SSLC)</h3>
-          <p>Government Boys Higher Secondary School, Udumalpet</p>
+          <div class="education-item"></div>
+            <h3>Secondary School (SSLC)</h3>
+            <p>Government Boys Higher Secondary School, Udumalpet</p>
+            <p>Year of Passing: <strong>2021</strong></p>
+            <p>Percentage: <strong>100%</strong></p>
+            <a href="sslc-certificate.pdf" target="_blank" class="cert-btn">
+              View SSLC Certificate
+           </a>
+           </div>
         </div>
       </div>
 
     </div>
   </div>
 </section>
+<section class="contact-section" id="contact">
+  <div class="contact-wrapper">
 
-<!-- CONTACT SECTION -->
-<section id="contact" class="contact">
-  <div class="contact-container">
-    <h2 class="section-title">Contact Me</h2>
-    <p>Email: ravi@gmail.com</p>
-    <p>Phone: 770664532</p>
-    <p>LinkedIn: <a href="https://linkedin/in/ravi1.com" target="_blank">linkedin/in/ravi1.com</a></p>
+    <!-- LEFT SIDE -->
+    <div class="contact-info">
+      <h2>Contact Me</h2>
+
+      <div class="contact-item">
+        <i class="fas fa-envelope"></i>
+        <a href="mailto:krishravi@gmail.com">krishravi@gmail.com</a>
+      </div>
+
+      <div class="contact-item">
+        <i class="fas fa-phone"></i>
+        <span>+91 77088 64328</span>
+      </div>
+
+      <div class="contact-item">
+        <i class="fab fa-linkedin"></i>
+        <a href="https://linkedin.com/in/ravi17" target="_blank">
+          linkedin.com/in/ravi17
+        </a>
+      </div>
+
+      <div class="contact-item">
+        <i class="fab fa-github"></i>
+        <a href="https://github.com/raviprasath4328" target="_blank">
+          github.com/raviprasath4328
+        </a>
+      </div>
+    </div>
+
+    <!-- RIGHT SIDE FORM -->
+    <form class="contact-form">
+      <div class="form-row">
+        <input type="text" placeholder="First Name" required>
+        <input type="text" placeholder="Last Name" required>
+      </div>
+
+      <input type="email" placeholder="Email" required>
+      <textarea rows="4" placeholder="Write a message"></textarea>
+
+      <button type="submit" class="contact-btn">Send Message</button>
+    </form>
+
   </div>
 </section>
+
+
 
 
   <script src="script.js"></script>
 </body>
 </html>
-
-
